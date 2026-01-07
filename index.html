@@ -1,25 +1,339 @@
-<h1> Gita Khanal </h1>
-Hello Linkedin Visitors 👋
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Gita Khanal - Portfolio</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <script>
+     tailwind.config = {
+       theme: {
+         extend: {
+           fontFamily: {
+             sans: ['Inter', 'sans-serif'],
+             hand: ['Patrick Hand', 'cursive'],
+           },
+           colors: {
+             paper: '#f3f4f6',
+             'sticky-peach': '#fff7ed',
+             'sticky-peach-inner': '#ffedd5',
+             'sticky-blue': '#eff6ff',
+             'sticky-blue-inner': '#dbeafe',
+             'sticky-purple': '#faf5ff',
+             'sticky-purple-inner': '#f3e8ff',
+             'sticky-yellow': '#fefce8',
+             'sticky-yellow-inner': '#fef9c3',
+             'sticky-green': '#f0fdf4',
+             'sticky-green-inner': '#dcfce7',
+           }
+         }
+       }
+     }
+   </script>
+   <style>
+     /* Lined paper background effect */
+     .lined-paper {
+       background-color: #f9fafb;
+       background-image: linear-gradient(#e5e7eb 1px, transparent 1px);
+       background-size: 100% 2.5rem;
+     }
+    
+     /* Smooth scroll behavior */
+     html {
+       scroll-behavior: smooth;
+     }
+   </style>
+ </head>
+ <body class="min-h-screen lined-paper pb-20 overflow-x-hidden text-gray-800 font-sans">
+  
+   <!-- Navbar -->
+   <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+     <h1 class="font-hand text-3xl font-bold text-gray-800">Gita Khanal.</h1>
+     <div class="hidden md:flex gap-6 font-hand text-xl text-gray-600">
+       <a href="#about" class="hover:text-gray-900">About</a>
+       <a href="#skills" class="hover:text-gray-900">Skills</a>
+       <a href="#experience" class="hover:text-gray-900">Experience</a>
+       <a href="#contact" class="hover:text-gray-900">Contact</a>
+     </div>
+   </nav>
 
--------------------------------------- Namaste, I'm Gita Khanal 👩‍💻 --------------------------------------
+   <!-- Main Content -->
+   <main class="max-w-4xl mx-auto px-4 mt-8 relative">
+     <div class="flex flex-col relative">
 
-- 🔭 I’m currently working on Flutter Projects.
+       <!-- Section 1: Hero (Peach) -->
+       <div id="hero" class="relative group">
+         <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+           <!-- Content Side (Left) -->
+           <div class="transition-all duration-500 md:order-1 relative">
+             <!-- Sticky Note -->
+             <div class="relative group transition-transform duration-300 hover:scale-105 hover:z-10 w-full max-w-sm mx-auto md:max-w-none" style="transform: rotate(-2deg)">
+               <!-- Pin -->
+               <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
+                 <div class="w-4 h-4 rounded-full bg-orange-500 shadow-lg relative">
+                   <div class="absolute top-1 left-1 w-1.5 h-1.5 bg-white opacity-40 rounded-full"></div>
+                 </div>
+                 <div class="w-1 h-3 bg-gray-400/50 blur-[1px] -mt-1"></div>
+               </div>
+               <!-- Card -->
+               <div class="relative bg-white p-2 rounded-2xl shadow-xl border border-gray-100">
+                 <div class="bg-orange-100 rounded-xl p-6 md:p-8 min-h-[280px] flex flex-col">
+                   <div class="mb-4 flex justify-between items-start">
+                     <div>
+                       <span class="font-hand text-4xl font-bold opacity-50 text-orange-900">01</span>
+                       <h2 class="text-2xl md:text-3xl font-bold mt-1 text-orange-900">Hello, I'm Gita</h2>
+                     </div>
+                     <img src="https://media.licdn.com/dms/image/v2/D4E03AQFXO6zM7H_s7w/profile-displayphoto-crop_800_800/B4EZsauYMaKkAI-/0/1765679924468?e=1769644800&v=beta&t=UH4QwHEt2V_-SQeUh8Q-IWkVHaBabRLtmcWELLBSoP4"
+                          alt="Gita Khanal"
+                          class="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-white shadow-sm object-cover ml-2 shrink-0">
+                   </div>
+                   <div class="flex-grow font-sans text-orange-900 opacity-90 leading-relaxed space-y-4">
+                     <p class="font-medium text-lg">Customer Service Associate | Computer Programming Graduate</p>
+                     <p>A recent graduate eager to begin my career in the Canadian professional environment. Honest, loyal, and motivated with a strong work ethic.</p>
+                     <div class="flex flex-wrap gap-3 mt-4">
+                       <a href="#contact" class="inline-flex items-center justify-center px-6 py-2 bg-orange-500 text-white rounded-full font-bold shadow-md hover:bg-orange-600 transition-colors">
+                         Get In Touch
+                       </a>
+                       <!-- Download Resume Button -->
+                       <a href="#" onclick="alert('Please add your resume PDF file to the project folder.')" class="inline-flex items-center justify-center px-6 py-2 bg-white text-orange-600 border-2 border-orange-500 rounded-full font-bold shadow-md hover:bg-orange-50 transition-colors gap-2">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                           <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                         </svg>
+                         Resume
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-- 🌱 I’m currently learning AWS.
+             <!-- Connector (Left to Right) -->
+             <svg class="absolute w-64 h-32 pointer-events-none overflow-visible z-0 hidden md:block" style="bottom: -1rem; right: -3rem;">
+               <path d="M 0 20 Q 80 20, 250 140" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8" />
+             </svg>
+           </div>
+           <!-- Spacer (Right) -->
+           <div class="hidden md:block md:order-2"></div>
+         </div>
+         <!-- Mobile Connector -->
+         <div class="h-16 w-0.5 border-l-2 border-dashed border-gray-300 mx-auto my-4 md:hidden"></div>
+         <div class="h-4 md:h-12 w-full"></div>
+       </div>
 
-- 👯 I’m looking to collaborate on Open Source Projects.
+       <!-- Section 2: About (Blue) -->
+       <div id="about" class="relative group">
+         <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+           <!-- Spacer (Left) -->
+           <div class="hidden md:block md:order-1"></div>
+           <!-- Content Side (Right) -->
+           <div class="transition-all duration-500 md:order-2 md:col-start-2 relative">
+             <!-- Sticky Note -->
+             <div class="relative group transition-transform duration-300 hover:scale-105 hover:z-10 w-full max-w-sm mx-auto md:max-w-none" style="transform: rotate(1deg)">
+               <!-- Pin -->
+               <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
+                 <div class="w-4 h-4 rounded-full bg-blue-600 shadow-lg relative">
+                   <div class="absolute top-1 left-1 w-1.5 h-1.5 bg-white opacity-40 rounded-full"></div>
+                 </div>
+                 <div class="w-1 h-3 bg-gray-400/50 blur-[1px] -mt-1"></div>
+               </div>
+               <!-- Card -->
+               <div class="relative bg-white p-2 rounded-2xl shadow-xl border border-gray-100">
+                 <div class="bg-blue-100 rounded-xl p-6 md:p-8 min-h-[280px] flex flex-col">
+                   <div class="mb-4">
+                     <span class="font-hand text-4xl font-bold opacity-50 text-blue-900">02</span>
+                     <h2 class="text-2xl md:text-3xl font-bold mt-1 text-blue-900">About Me</h2>
+                   </div>
+                   <div class="flex-grow font-sans text-blue-900 opacity-90 leading-relaxed space-y-3 text-sm md:text-base">
+                     <p>I am passionate about developing new skills and adapting quickly to dynamic workplaces. I take pride in being a fast learner who welcomes challenges and feedback.</p>
+                     <p>With experience in customer service, software development, and IT assistance, I am committed to delivering quality results.</p>
+                     <p class="font-semibold mt-2">Education:</p>
+                     <ul class="list-disc pl-4 text-xs md:text-sm">
+                         <li>Diploma in Computer Programming, Seneca Polytechnic (2025)</li>
+                         <li>Certifications: IT Support Fundamentals, Microsoft Office, AWS Cloud Practitioner</li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-- 💬 Ask me about Flutter Development.
+             <!-- Connector (Right to Left) -->
+             <svg class="absolute w-64 h-32 pointer-events-none overflow-visible z-0 hidden md:block" style="bottom: -1rem; left: -3rem;">
+               <path d="M 0 20 Q -80 20, -250 140" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8" />
+             </svg>
+           </div>
+         </div>
+         <!-- Mobile Connector -->
+         <div class="h-16 w-0.5 border-l-2 border-dashed border-gray-300 mx-auto my-4 md:hidden"></div>
+         <div class="h-4 md:h-12 w-full"></div>
+       </div>
 
-- 📫 How to reach me: @thetechgirlgita(GitHub, Twitter, Medium)
+       <!-- Section 3: Skills (Purple) -->
+       <div id="skills" class="relative group">
+         <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+           <!-- Content Side (Left) -->
+           <div class="transition-all duration-500 md:order-1 relative">
+             <!-- Sticky Note -->
+             <div class="relative group transition-transform duration-300 hover:scale-105 hover:z-10 w-full max-w-sm mx-auto md:max-w-none" style="transform: rotate(-1deg)">
+               <!-- Pin -->
+               <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
+                 <div class="w-4 h-4 rounded-full bg-purple-600 shadow-lg relative">
+                   <div class="absolute top-1 left-1 w-1.5 h-1.5 bg-white opacity-40 rounded-full"></div>
+                 </div>
+                 <div class="w-1 h-3 bg-gray-400/50 blur-[1px] -mt-1"></div>
+               </div>
+               <!-- Card -->
+               <div class="relative bg-white p-2 rounded-2xl shadow-xl border border-gray-100">
+                 <div class="bg-purple-100 rounded-xl p-6 md:p-8 min-h-[280px] flex flex-col">
+                   <div class="mb-4">
+                     <span class="font-hand text-4xl font-bold opacity-50 text-purple-900">03</span>
+                     <h2 class="text-2xl md:text-3xl font-bold mt-1 text-purple-900">Key Skills</h2>
+                   </div>
+                   <div class="flex-grow font-sans text-purple-900 opacity-90 leading-relaxed">
+                     <div class="grid grid-cols-2 gap-2 mt-2">
+                       <span class="bg-white/50 px-2 py-1 rounded text-sm font-semibold text-center">Python / C++</span>
+                       <span class="bg-white/50 px-2 py-1 rounded text-sm font-semibold text-center">Troubleshooting</span>
+                       <span class="bg-white/50 px-2 py-1 rounded text-sm font-semibold text-center">ServiceNow/Jira</span>
+                       <span class="bg-white/50 px-2 py-1 rounded text-sm font-semibold text-center">Active Directory</span>
+                       <span class="bg-white/50 px-2 py-1 rounded text-sm font-semibold text-center">Linux/Bash</span>
+                       <span class="bg-white/50 px-2 py-1 rounded text-sm font-semibold text-center">Network Config</span>
+                       <span class="bg-white/50 px-2 py-1 rounded text-sm font-semibold text-center">Cust. Service</span>
+                       <span class="bg-white/50 px-2 py-1 rounded text-sm font-semibold text-center">MS Office</span>
+                     </div>
+                     <div class="mt-4 text-sm font-medium">
+                       Languages: English, Hindi, Punjabi, Nepali, French (Basic)
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-- 😄 Pronouns: Techy(20%), Geet(80%)
+             <!-- Connector (Left to Right) -->
+             <svg class="absolute w-64 h-32 pointer-events-none overflow-visible z-0 hidden md:block" style="bottom: -1rem; right: -3rem;">
+               <path d="M 0 20 Q 80 20, 250 140" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8" />
+             </svg>
+           </div>
+           <!-- Spacer (Right) -->
+           <div class="hidden md:block md:order-2"></div>
+         </div>
+         <!-- Mobile Connector -->
+         <div class="h-16 w-0.5 border-l-2 border-dashed border-gray-300 mx-auto my-4 md:hidden"></div>
+         <div class="h-4 md:h-12 w-full"></div>
+       </div>
 
-- ⚡ Fun fact: 
+       <!-- Section 4: Projects (Yellow) -->
+       <div id="experience" class="relative group">
+         <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+           <!-- Spacer (Left) -->
+           <div class="hidden md:block md:order-1"></div>
+           <!-- Content Side (Right) -->
+           <div class="transition-all duration-500 md:order-2 md:col-start-2 relative">
+             <!-- Sticky Note -->
+             <div class="relative group transition-transform duration-300 hover:scale-105 hover:z-10 w-full max-w-sm mx-auto md:max-w-none" style="transform: rotate(2deg)">
+               <!-- Pin -->
+               <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
+                 <div class="w-4 h-4 rounded-full bg-yellow-500 shadow-lg relative">
+                   <div class="absolute top-1 left-1 w-1.5 h-1.5 bg-white opacity-40 rounded-full"></div>
+                 </div>
+                 <div class="w-1 h-3 bg-gray-400/50 blur-[1px] -mt-1"></div>
+               </div>
+               <!-- Card -->
+               <div class="relative bg-white p-2 rounded-2xl shadow-xl border border-gray-100">
+                 <div class="bg-yellow-100 rounded-xl p-6 md:p-8 min-h-[280px] flex flex-col">
+                   <div class="mb-4">
+                     <span class="font-hand text-4xl font-bold opacity-50 text-yellow-900">04</span>
+                     <h2 class="text-2xl md:text-3xl font-bold mt-1 text-yellow-900">Experience</h2>
+                   </div>
+                   <div class="flex-grow font-sans text-yellow-900 opacity-90 leading-relaxed text-sm">
+                     <ul class="space-y-4 list-disc pl-4 marker:text-yellow-600">
+                       <li>
+                         <strong>Amusement Associate</strong><br/>
+                         <span class="text-xs font-semibold">Player One Amusement Group (Jul 2023 – present)</span><br/>
+                         Troubleshot technical issues with POS systems and amusement machines. Generated support tickets and improved system uptime.
+                       </li>
+                       <li>
+                         <strong>Junior Flutter Developer</strong><br/>
+                         <span class="text-xs font-semibold">Creative Precision Technologies (Aug 2021 – Jun 2022)</span><br/>
+                         Designed mobile app interfaces, reducing design time by 30%. Supported QA processes and integrated mapping APIs.
+                       </li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
- - Travelling(India(Punjab, Jammu Kashmir, Himachal Pradesh), Nepal(Dang, Nepalgunj, Butwal, 
- Kathmandu, Pokhara, Tanahu, Gorkha, Argakhachi, Pyuthan, Lumbini, Palpa, Patan))
+             <!-- Connector (Right to Left) -->
+             <svg class="absolute w-64 h-32 pointer-events-none overflow-visible z-0 hidden md:block" style="bottom: -1rem; left: -3rem;">
+               <path d="M 0 20 Q -80 20, -250 140" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8 8" />
+             </svg>
+           </div>
+         </div>
+         <!-- Mobile Connector -->
+         <div class="h-16 w-0.5 border-l-2 border-dashed border-gray-300 mx-auto my-4 md:hidden"></div>
+         <div class="h-4 md:h-12 w-full"></div>
+       </div>
 
- - Singing(Bollywood sometimes)
+       <!-- Section 5: Contact (Green) -->
+       <div id="contact" class="relative group">
+         <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+           <!-- Content Side (Left) -->
+           <div class="transition-all duration-500 md:order-1 relative">
+             <!-- Sticky Note -->
+             <div class="relative group transition-transform duration-300 hover:scale-105 hover:z-10 w-full max-w-sm mx-auto md:max-w-none" style="transform: rotate(-2deg)">
+               <!-- Pin -->
+               <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
+                 <div class="w-4 h-4 rounded-full bg-green-600 shadow-lg relative">
+                   <div class="absolute top-1 left-1 w-1.5 h-1.5 bg-white opacity-40 rounded-full"></div>
+                 </div>
+                 <div class="w-1 h-3 bg-gray-400/50 blur-[1px] -mt-1"></div>
+               </div>
+               <!-- Card -->
+               <div class="relative bg-white p-2 rounded-2xl shadow-xl border border-gray-100">
+                 <div class="bg-green-100 rounded-xl p-6 md:p-8 min-h-[280px] flex flex-col">
+                   <div class="mb-4">
+                     <span class="font-hand text-4xl font-bold opacity-50 text-green-900">05</span>
+                     <h2 class="text-2xl md:text-3xl font-bold mt-1 text-green-900">Let's Connect</h2>
+                   </div>
+                   <div class="flex-grow font-sans text-green-900 opacity-90 leading-relaxed space-y-4">
+                     <p>Currently open for new opportunities in Toronto, ON.</p>
+                     <div class="flex flex-col gap-2 text-sm md:text-base">
+                       <a href="mailto:gitaa.khanall@gmail.com" class="flex items-center gap-2 hover:underline font-bold break-all">
+                         <span>✉️</span> gitaa.khanall@gmail.com
+                       </a>
+                       <a href="tel:+14375511102" class="flex items-center gap-2 hover:underline font-bold">
+                         <span>📞</span> (437) 551-1102
+                       </a>
+                       <a href="https://linkedin.com/in/thetechgirlgita" target="_blank" class="flex items-center gap-2 hover:underline font-bold">
+                         <span>🔗</span> linkedin.com/in/thetechgirlgita
+                       </a>
+                       <a href="https://github.com/thetechgirlgita" target="_blank" class="flex items-center gap-2 hover:underline font-bold">
+                         <span>💻</span> github.com/thetechgirlgita
+                       </a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            
+             <!-- No connector for last item -->
+           </div>
+           <!-- Spacer (Right) -->
+           <div class="hidden md:block md:order-2"></div>
+         </div>
+         <!-- Mobile Connector Hidden for Last Item -->
+       </div>
 
-- 🙆 More about me: 
+     </div>
+
+     <!-- Footer -->
+     <div class="text-center mt-12 mb-20">
+       <div class="inline-block p-4 bg-white rounded-full shadow-md border border-gray-200">
+         <span class="text-2xl">🚀</span>
+       </div>
+       <p class="font-hand text-xl text-gray-500 mt-2">Thanks for visiting!</p>
+     </div>
+
+   </main>
+ </body>
+</html>
+
