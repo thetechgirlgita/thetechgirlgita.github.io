@@ -1,0 +1,119 @@
+/* --- VARIABLES & RESET --- */
+:root {
+    --bg-dark: #080808;
+    --card-bg: #121212;
+    --accent: #00f2ff; /* Cyber Cyan */
+    --text-main: #ffffff;
+    --text-dim: #b0b0b0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- ANIMATED BACKGROUND --- */
+.glow {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* --- HERO --- */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    margin-bottom: 25px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.badge {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h1 { font-size: 4.5rem; margin: 0; letter-spacing: -2px; }
+.hero-sub { color: var(--text-dim); font-size: 1.2rem; max-width: 500px; }
+
+/* --- CARDS & SECTIONS --- */
+section { padding: 60px 0; }
+h2 { color: var(--accent); font-size: 1.8rem; margin-bottom: 30px; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #222;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.05);
+}
+
+.company { color: var(--accent); font-weight: bold; margin-bottom: 15px; }
+
+/* --- TAGS & BUTTONS --- */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.tag {
+    background: #1a1a1a;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: var(--text-main);
+    border: 1px solid #333;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: var(--accent);
+    color: #000;
+}
