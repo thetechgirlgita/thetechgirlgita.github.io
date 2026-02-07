@@ -11,6 +11,15 @@
 
     <div class="glow" id="mouseGlow"></div>
 
+    <div class="theme-switch-wrapper">
+        <span id="greeting">Hello</span>
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        
+    </div>
+
     <header>
         <img src="profile.picture.jpg" alt="Gita Khanal" class="profile-img">
         <div class="badge">IT Support Specialist | Junior Web Developer</div>
@@ -151,11 +160,7 @@
         </section>
     </div>
 
-    <script>
-        const glow = document.getElementById('mouseGlow');
-        document.addEventListener('mousemove', (e) => {
-            glow.style.background = `radial-gradient(circle at ${e.clientX}px ${e.clientY}px, rgba(0, 242, 255, 0.1) 0%, transparent 40%)`;
-        });
-    </script>
+    <script src="script.js"></script>
+
 </body>
 </html>
