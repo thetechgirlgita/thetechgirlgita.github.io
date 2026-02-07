@@ -1,1 +1,2 @@
-My [Portfolio](thetechgirlgita.github.io)
+My [Portfolio](https://thetechgirlgita.github.io)
+
